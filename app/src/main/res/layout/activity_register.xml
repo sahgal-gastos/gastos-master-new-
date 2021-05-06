@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register"
+    android:background="@drawable/login_backgroun"
+    android:scaleY="1"
+    android:scaleX="1">
+
+
+    <ImageView
+        android:id="@+id/femaleselected"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/circle_outline"
+        app:layout_constraintBottom_toBottomOf="@+id/femaleImageView"
+        app:layout_constraintEnd_toEndOf="@+id/femaleImageView"
+        app:layout_constraintStart_toStartOf="@+id/femaleImageView"
+        app:layout_constraintTop_toTopOf="@+id/femaleImageView" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/femaleImageView"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="40dp"
+        android:src="@drawable/ic_girl"
+        app:layout_constraintBottom_toBottomOf="@+id/maleselected"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/maleselected"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/circle_outline"
+        app:layout_constraintBottom_toBottomOf="@+id/maleImageView"
+        app:layout_constraintEnd_toEndOf="@+id/maleImageView"
+        app:layout_constraintStart_toStartOf="@+id/maleImageView"
+        app:layout_constraintTop_toTopOf="@+id/maleImageView" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/maleImageView"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/ic_boy"
+        app:layout_constraintEnd_toStartOf="@+id/femaleImageView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/nextbutton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button"
+        android:text="NEXT  >"
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        app:layout_constraintVertical_bias="0.49" />
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:id="@+id/cardView"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:layout_marginTop="64dp"-->
+<!--        android:layout_marginEnd="8dp"-->
+<!--        app:cardElevation="8dp"-->
+<!--        app:cardMaxElevation="5dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/maleImageView">-->
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:id="@+id/constraint_layout"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:gravity="center"-->
+
+<!--            android:orientation="vertical"-->
+<!--            android:padding="10dp">-->
+
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                android:id="@+id/signup_input_layout_name"-->
+<!--                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:background="@drawable/edit_page"-->
+<!--                app:layout_constraintEnd_toStartOf="@+id/guideline8"-->
+<!--                app:layout_constraintHorizontal_bias="0.0"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/guideline4"-->
+<!--                app:layout_constraintTop_toTopOf="parent">-->
+
+<!--                <com.google.android.material.textfield.TextInputEditText-->
+<!--                    android:id="@+id/Firstname"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:ems="10"-->
+<!--                    android:hint="First Name"-->
+
+
+<!--                    android:inputType="textPersonName" />-->
+<!--            </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                android:id="@+id/signup_input_layout_name1"-->
+<!--                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_centerHorizontal="true"-->
+
+<!--                app:layout_constraintBottom_toBottomOf="@+id/signup_input_layout_name"-->
+<!--                app:layout_constraintEnd_toStartOf="@+id/guideline3"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/guideline7"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/signup_input_layout_name">-->
+
+<!--                <com.google.android.material.textfield.TextInputEditText-->
+<!--                    android:id="@+id/lastname"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:ems="10"-->
+<!--                    android:hint="Last Name"-->
+<!--                    android:inputType="textPersonName" />-->
+
+
+<!--            </com.google.android.material.textfield.TextInputLayout>-->
+
+
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                android:id="@+id/signup_input_layout_name120"-->
+<!--                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--                android:layout_width="0dp"-->
+
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:layout_marginTop="16dp"-->
+
+<!--                app:layout_constraintEnd_toStartOf="@+id/guideline3"-->
+<!--                app:layout_constraintHorizontal_bias="1.0"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/guideline4"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/signup_input_layout_name">-->
+
+<!--                <com.google.android.material.textfield.TextInputEditText-->
+<!--                    android:id="@+id/Email"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:ems="10"-->
+<!--                    android:clickable="false"-->
+<!--                    android:focusable="false"-->
+<!--                    android:defaultFocusHighlightEnabled="false"-->
+<!--                    android:longClickable="false"-->
+<!--                    android:enabled="false"-->
+<!--                    android:hint="Email"-->
+<!--                    android:inputType="textEmailAddress" />-->
+
+<!--            </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                android:id="@+id/signup_input_layout_phoneno"-->
+<!--                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--                android:layout_width="0dp"-->
+
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:layout_marginTop="16dp"-->
+<!--                android:layout_marginEnd="98dp"-->
+
+<!--                app:layout_constraintEnd_toStartOf="@+id/guideline3"-->
+<!--                app:layout_constraintHorizontal_bias="1.0"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/guideline4"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/signup_input_layout_name120">-->
+
+<!--                <com.google.android.material.textfield.TextInputEditText-->
+<!--                    android:id="@+id/Phoneno"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:ems="10"-->
+<!--                    android:hint="Phone no"-->
+<!--                    android:inputType="phone" />-->
+
+<!--            </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--            <Button-->
+<!--                android:id="@+id/nextbutton1"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="8dp"-->
+<!--                android:layout_marginEnd="8dp"-->
+<!--                android:text="Verify"-->
+<!--                app:layout_constraintBottom_toBottomOf="@+id/signup_input_layout_phoneno"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/signup_input_layout_phoneno"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/signup_input_layout_phoneno" />-->
+
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                android:id="@+id/signup_input_layout_dob"-->
+<!--                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--                android:layout_width="0dp"-->
+
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:layout_marginTop="16dp"-->
+<!--                android:layout_marginEnd="0dp"-->
+<!--                app:layout_constraintEnd_toStartOf="@+id/guideline3"-->
+<!--                app:layout_constraintHorizontal_bias="1.0"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/guideline4"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/signup_input_layout_phoneno">-->
+
+<!--                <com.google.android.material.textfield.TextInputEditText-->
+<!--                    android:id="@+id/dob"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:clickable="false"-->
+<!--                    android:cursorVisible="false"-->
+<!--                    android:drawableEnd="@drawable/ic_event_black_24dp"-->
+<!--                    android:ems="10"-->
+<!--                    android:focusable="false"-->
+<!--                    android:focusableInTouchMode="false"-->
+<!--                    android:hint="Date of birth"-->
+<!--                    android:inputType="date" />-->
+
+<!--            </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                android:id="@+id/signup_input_layout_refno1"-->
+<!--                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--                android:layout_width="0dp"-->
+
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:layout_marginTop="16dp"-->
+
+<!--                android:layout_marginEnd="98dp"-->
+<!--                app:layout_constraintEnd_toStartOf="@+id/guideline3"-->
+<!--                app:layout_constraintHorizontal_bias="1.0"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/guideline4"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/signup_input_layout_dob">-->
+
+<!--                <com.google.android.material.textfield.TextInputEditText-->
+<!--                    android:id="@+id/refnoedittest"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:ems="10"-->
+<!--                    android:hint="Refrence Code"-->
+<!--                    android:inputType="text"-->
+<!--                  />-->
+
+<!--            </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--            <Button-->
+<!--                android:id="@+id/velidatebutton"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="8dp"-->
+<!--                android:layout_marginEnd="8dp"-->
+<!--                android:text="Velidate"-->
+<!--                app:layout_constraintBottom_toBottomOf="@+id/signup_input_layout_refno1"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/signup_input_layout_refno1"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/signup_input_layout_refno1" />-->
+
+<!--            <androidx.constraintlayout.widget.Guideline-->
+<!--                android:id="@+id/guideline3"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                app:layout_constraintGuide_end="10dp" />-->
+
+<!--            <androidx.constraintlayout.widget.Guideline-->
+<!--                android:id="@+id/guideline4"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                app:layout_constraintGuide_percent="0.20" />-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/imageView21"-->
+<!--                android:layout_width="24dp"-->
+<!--                android:layout_height="24dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:contentDescription="TODO"-->
+<!--                android:src="@drawable/pfile"-->
+<!--                app:layout_constraintBottom_toBottomOf="@+id/signup_input_layout_name"-->
+<!--                app:layout_constraintEnd_toStartOf="@+id/guideline4"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/signup_input_layout_name" />-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/imageView3"-->
+<!--                android:layout_width="24dp"-->
+<!--                android:layout_height="24dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:src="@drawable/ic_email_black_24dp"-->
+<!--                app:layout_constraintBottom_toBottomOf="@+id/signup_input_layout_name120"-->
+<!--                app:layout_constraintEnd_toStartOf="@+id/guideline4"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/signup_input_layout_name120"-->
+<!--                app:layout_constraintVertical_bias="0.38" />-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/imageView4"-->
+<!--                android:layout_width="24dp"-->
+<!--                android:layout_height="24dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:src="@drawable/ic_phone_black_24dp"-->
+<!--                app:layout_constraintBottom_toBottomOf="@+id/signup_input_layout_phoneno"-->
+<!--                app:layout_constraintEnd_toStartOf="@+id/guideline4"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/signup_input_layout_phoneno"-->
+<!--                app:layout_constraintVertical_bias="0.38" />-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/imageView5"-->
+<!--                android:layout_width="24dp"-->
+<!--                android:layout_height="24dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:src="@drawable/ic_cake_24px"-->
+<!--                app:layout_constraintBottom_toBottomOf="@+id/signup_input_layout_dob"-->
+<!--                app:layout_constraintEnd_toStartOf="@+id/guideline4"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/signup_input_layout_dob"-->
+<!--                app:layout_constraintVertical_bias="0.38" />-->
+
+<!--            <androidx.constraintlayout.widget.Guideline-->
+<!--                android:id="@+id/guideline7"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="16dp"-->
+<!--                android:orientation="vertical"-->
+<!--                app:layout_constraintGuide_percent="0.6050633"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--            <androidx.constraintlayout.widget.Guideline-->
+<!--                android:id="@+id/guideline8"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                app:layout_constraintGuide_percent="0.57" />-->
+
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--    </androidx.cardview.widget.CardView>-->
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="80dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/maleselected">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="32dp"
+                android:text="FIRST NAME: "
+                android:textColor="#fff"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <EditText
+                android:id="@+id/Firstname"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/btn_desgin"
+                android:hint="First Name"
+                android:padding="8dp"
+                android:enabled="false"
+                android:singleLine="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline3"
+                app:layout_constraintStart_toStartOf="@+id/textView38"
+                app:layout_constraintTop_toBottomOf="@+id/textView38"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView39"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:text="LAST NAME: "
+                android:textColor="#FFF"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView38"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline3"
+                app:layout_constraintTop_toTopOf="@+id/textView38" />
+
+            <EditText
+                android:id="@+id/lastname"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/btn_desgin"
+                android:hint="Last Name"
+                android:enabled="false"
+                android:singleLine="true"
+                android:padding="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/Firstname"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline3"
+                app:layout_constraintTop_toTopOf="@+id/Firstname" />
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintGuide_begin="203dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintGuide_percent="0.50"/>
+
+            <TextView
+                android:id="@+id/textView40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:text="EMAIL:"
+                android:textColor="#FFF"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline3"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Firstname" />
+
+            <EditText
+                android:id="@+id/Email"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="32dp"
+                android:singleLine="true"
+                android:background="@drawable/btn_desgin"
+                android:enabled="false"
+                android:hint="abc@gmail.com"
+                android:padding="8dp"
+                android:inputType="textWebEmailAddress"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView40"
+                app:layout_constraintTop_toBottomOf="@+id/textView40" />
+
+            <TextView
+                android:id="@+id/textView41"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:text="MOBILE: "
+                android:textColor="#FFF"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline3"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Email" />
+
+            <EditText
+                android:id="@+id/Phoneno"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="150dp"
+                android:background="@drawable/btn_desgin"
+                android:singleLine="true"
+                android:inputType="phone"
+                android:padding="8dp"
+                android:maxLength="10"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textView41"
+                app:layout_constraintTop_toBottomOf="@+id/textView41" />
+
+            <TextView
+                android:id="@+id/textView42"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="Date Of Birth: "
+                android:textColor="#FFF"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline3"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Phoneno" />
+
+            <EditText
+                android:id="@+id/dob"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/btn_desgin"
+                android:focusable="false"
+                android:singleLine="true"
+                android:padding="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textView42"
+                app:layout_constraintTop_toBottomOf="@+id/textView42" />
+
+            <TextView
+                android:id="@+id/textView43"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="REFERENCE CODE: "
+                android:textColor="#FFF"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline3"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/dob"
+                app:layout_constraintTop_toBottomOf="@+id/dob" />
+
+            <EditText
+                android:id="@+id/refnoedittest"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="150dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/btn_desgin"
+                android:hint="Ref Code"
+                android:singleLine="true"
+                android:padding="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView43"
+                app:layout_constraintTop_toBottomOf="@+id/textView43"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/velidatebutton"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/button"
+                android:text="VALIDATE"
+                android:textColor="#fff"
+                app:layout_constraintBottom_toBottomOf="@+id/refnoedittest"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/refnoedittest"
+                app:layout_constraintTop_toTopOf="@+id/refnoedittest" />
+
+            <Button
+                android:id="@+id/nextbutton1"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="24dp"
+                android:visibility="gone"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/button"
+                android:text="VERIFY"
+                android:textColor="#fff"
+                app:layout_constraintBottom_toBottomOf="@+id/Phoneno"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/Phoneno"
+                app:layout_constraintTop_toTopOf="@+id/Phoneno"
+                app:layout_constraintVertical_bias="0.0" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="Register"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

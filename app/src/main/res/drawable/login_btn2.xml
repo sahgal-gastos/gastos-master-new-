@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:drawable="@drawable/sign_up_with_facebook"
+        android:bottom="5dp"
+        android:left="5dp"
+        android:right="5dp"
+        android:top="5dp" />
+
+    <item>
+        <shape
+            android:shape="rectangle">
+            <corners android:radius="10dp" />
+            <stroke
+                android:width="15dp"
+                android:color="#4267B2" />
+        </shape>
+    </item>
+</layer-list>

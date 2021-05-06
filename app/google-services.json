@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "1040449420487",
+    "firebase_url": "https://crazypocket-f95f0.firebaseio.com",
+    "project_id": "crazypocket-f95f0",
+    "storage_bucket": "crazypocket-f95f0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1040449420487:android:fe68022c31b18faefd92e2",
+        "android_client_info": {
+          "package_name": "com.cu.crazypocket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1040449420487-isa641qhigtqim1un6pclhtkbruacv2j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cu.crazypocket",
+            "certificate_hash": "3296520425a2a27c1fd3b9e890cfda23d2640626"
+          }
+        },
+        {
+          "client_id": "1040449420487-00ecim65dspeikai18jldclfkm65u7qv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cu.crazypocket",
+            "certificate_hash": "5301d71ee5fdc3d47407a0bea6c046c9b2209714"
+          }
+        },
+        {
+          "client_id": "1040449420487-r2k2tt7saa80gsg354ph39paee6aik7i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6T_CMDy8WQMrp8yr40vOXrOCHPXqdqTE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1040449420487-r2k2tt7saa80gsg354ph39paee6aik7i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

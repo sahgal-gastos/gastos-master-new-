@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#07393A</color>
+    <color name="colorPrimaryDark">#042229</color>
+    <color name="colorAccent">#13505E</color>
+    <color name="blue">#64D1E8</color>
+    <color name="color1">#967ADC</color>
+    <color name="color3">#680571</color>
+
+    <color name="violet">#EE82EE</color>
+    <color name="medium_pink">#9370DB</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="hot_pink">#FF69B4</color>
+    <color name="azure">#F0FFFF</color>
+    <color name="teal">#008080</color>
+    <color name="deep_sky">#FFF</color>
+    <color name="corn_flower">#6495ED</color>
+    <color name="indigo">#4B0082</color>
+    <color name="green">#08B60F</color>
+    <color name="red">#E41E1E</color>
+    <color name="colorBackground">#151B29</color>
+    <color name="colorYellow">#F5FA55</color>
+
+
+    <color name="placeholder_bg">#08313A</color>
+    <color name="item_name">#0c0c0c</color>
+    <color name="description">#1a1a1a</color>
+    <color name="chef">#777</color>
+    <color name="timestamp">#777</color>
+    <color name="background">#08313A</color>
+
+
+</resources>

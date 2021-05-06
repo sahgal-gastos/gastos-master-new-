@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Gastos</string>
+    <string name="facebook_app_id">2473811829546526</string>
+    <string name="fb_login_protocol_scheme">fb2473811829546526</string>
+
+    <string name="deals">Dealzz</string>
+    <string name="home">Home</string>
+    <string name="provider">Provider</string>
+    <string name="Paytmhelp"><![CDATA[Open Paytm App > UPI Money Transfer > More > Recent Payments > View All > Click on Transaction to check status]]></string>
+    <string name="GpayHelp"><![CDATA[Open Google Pay App > See All Payment Activity > Click On Transaction to check status]]></string>
+    <string name="PhonePeHelp"><![CDATA[Open PhonePe App > History < Click On Transaction to check status]]></string>
+    <string name="BHIMHelp"><![CDATA[Open BHIM app > Transaction < Click on Transaction to check status]]></string>
+
+    <string-array name="location">
+        <item>Chandigarh University</item>
+        <item>LPU</item>
+        <item>Chitkara University</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

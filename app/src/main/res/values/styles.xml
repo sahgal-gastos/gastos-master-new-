@@ -1,0 +1,37 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:textColorHint">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:windowActivityTransitions">true</item>
+    </style>
+
+    <style name="Divider">
+        <item name="android:background">?android:attr/listDivider</item> //you can give your color here. that will change all divider color in your app.
+    </style>
+
+    <style name="Divider.Horizontal" parent="Divider">
+        <item name="android:color">#000</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item> // You can change thickness here.
+    </style>
+
+    <style name="mySpinnerItemStyle" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="android:textColor">#FFF</item>
+        <item name="android:backgroundTint">#FFF</item>
+        <item name="android:colorBackground">#FFF</item>
+        <item name="colorBackgroundFloating">#FFF</item>
+        <item name="colorButtonNormal">#FFF</item>
+        <item name="colorControlNormal">#FFF</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:tint">#FFF</item>
+    </style>
+
+
+</resources>
